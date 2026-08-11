@@ -1,0 +1,14 @@
+# TypeScript Snippets 📘
+
+My personal collection of TypeScript code snippets, utility functions, and interesting patterns I've learned. 
+
+## 🎯 Goal
+The purpose of this repository is to document my learning journey and keep a handy reference of useful TypeScript features (like generics, advanced types, etc.).
+
+## 📂 Structure
+- `/basics` - Core TypeScript concepts
+- `/advanced-types` - Utility types, generics, mapped types
+- `/functions` - Interesting function implementations
+
+
+2026 Wiejak Adam

@@ -1,0 +1,5 @@
+test.describe('Modół rejestracji'), () => {
+    test.beforeEach(async ({ page }) => {
+        await page.goto('https://app.example.com/register)
+    }
+}

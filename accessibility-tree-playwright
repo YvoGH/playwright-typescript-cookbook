@@ -1,0 +1,19 @@
+button – Zwykłe przyciski służące do akcji (Wyslij, Zapisz, Anuluj).
+
+link – Odnośniki (tagi <a>). Służą do przenoszenia na inne podstrony.
+
+Przykład: page.getByRole('link', { name: 'Polityka prywatności' })
+
+textbox – Pola tekstowe. Czasem pole nie ma placeholdera, więc szukamy go po przypisanej etykiecie (Label). Przykład: page.getByRole('textbox', { name: 'Opis profilu' })
+
+heading – Nagłówki (h1 - h6). Świetne do sprawdzania, czy jesteś na dobrej stronie. Możesz nawet filtrować po poziomie. Przykład: page.getByRole('heading', { level: 2, name: 'Ustawienia konta' })
+
+combobox – Rozwijane listy (tzw. dropdowny, tagi <select>).
+
+alert – Wyskakujące komunikaty (tzw. toasty), np. zielony dymek "Zapisano pomyślnie" w rogu ekranu.
+
+checkbox / radio – Pola wyboru.
+
+list i listitem – Listy elementów (<ul> / <li>). Używamy tego często do policzenia, czy wyświetliła się odpowiednia liczba wyników.Przykład: page.getByRole('listitem').filter({ hasText: 'Jabłko' })
+
+dialog – okienka modalne, które wyskakują nad stroną i wymagają interakcji.

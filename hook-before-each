@@ -1,5 +1,12 @@
-test.describe('Modół rejestracji'), () => {
+import { test, expect } from '@playwright/test';
+
+test.describe('Moduł rejestracji', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('https://app.example.com/register)
-    }
-}
+        await page.goto('https://app.example.com/register');
+    });
+
+    test('Rejestracja poprawnymi danymi', async ({ page }) => {
+    });
+    test('Rejestracja z pustym polem email', async ({ page }) => {
+    });
+});

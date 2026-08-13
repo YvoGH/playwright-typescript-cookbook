@@ -51,3 +51,11 @@ test.describe('Moduł rejestracji', () => {
         await expect.soft(page.getByText('Zgoda na regulamin jest obowiązkowa')).toBeVisible();
     });
 });
+
+test('Zmiana hasła użytkownika', async ({ page }) => {
+    await page.goto('https://app.example.com/settings');
+    const passwordModal = page.getByRole('dialog', { name: 'Zmień hasło'});
+    await passwordModal.getByPlaceholder('Nowe hasło').fill('SilneHaslo99!');
+    await passwordModal.getByRole('button', { name: 'Zapisz zmiany'}).click();
+    await expect(passwordModal).not.toBeVisible();
+    });
